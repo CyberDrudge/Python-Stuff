@@ -26,3 +26,16 @@ def post_var_3(**kwargs):
 post_var_3(x = 'Hey! This is x.',
              y = 'Hey! This is y.',
              z = 'Hey! This is z.')
+
+
+import matplotlib.pyplot as plt
+
+def graph_operation(a, b):
+    print('function that graphs {} and {}'.format(a, b))
+    plt.plot(a,b)
+    plt.show()
+
+x = [1,3,5]
+y = [1,9,1]
+plot_me = [x,y]
+graph_operation(*plot_me)
